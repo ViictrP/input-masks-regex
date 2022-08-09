@@ -14,6 +14,14 @@
     <style>
       html {
         font-family: 'Nunito';
+        padding: 10px 5px;
+      }
+
+      .container {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 2rem;
       }
 
       .money-input-container {
@@ -30,9 +38,26 @@
     </style>
   </head>
   <body>
-    <div class="money-input-container">
-      <label for="moneyInput">Money Input</label>
-      <input id="moneyInput" type="text" placeholder="0,00" />
+    <div class="container">
+      <div class="money-input-container">
+        <label for="moneyInput">Money Input</label>
+        <input id="moneyInput" type="text" placeholder="0,00" />
+      </div>
+
+      <div class="money-input-container">
+        <label for="cpfInput">CPF Input</label>
+        <input id="cpfInput" type="text" placeholder="000.000.000-00" />
+      </div>
+
+      <div class="money-input-container">
+        <label for="cnpjInput">CNPJ Input</label>
+        <input id="cnpjInput" type="text" placeholder="00.000.000/0000-00" />
+      </div>
+
+      <div class="money-input-container">
+        <label for="phoneInput">Phone Input</label>
+        <input id="phoneInput" type="text" placeholder="(00) 00000-0000" />
+      </div>
     </div>
   </body>
   <script src="./moneyInput.js"></script>
