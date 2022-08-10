@@ -13,7 +13,7 @@
     />
     <style>
       html {
-        font-family: 'Nunito',serif;
+        font-family: 'Nunito', serif;
         padding: 10px 5px;
       }
 
@@ -41,24 +41,47 @@
     <div class="container">
       <div class="money-input-container">
         <label for="moneyInput">Money Input</label>
-        <input id="moneyInput" type="text" placeholder="0,00" />
+        <input
+          id="moneyInput"
+          type="text"
+          placeholder="0,00"
+          oninput="applyCurrencyMask(event)"
+        />
       </div>
 
       <div class="money-input-container">
         <label for="cpfInput">CPF Input</label>
-        <input id="cpfInput" type="text" placeholder="000.000.000-00" />
+        <input
+          id="cpfInput"
+          type="text"
+          placeholder="000.000.000-00"
+          oninput="applyCpfMask(event)"
+        />
       </div>
 
       <div class="money-input-container">
         <label for="cnpjInput">CNPJ Input</label>
-        <input id="cnpjInput" type="text" placeholder="00.000.000/0000-00" />
+        <input
+          id="cnpjInput"
+          type="text"
+          placeholder="00.000.000/0000-00"
+          oninput="applyCnpjMask(event)"
+        />
       </div>
 
       <div class="money-input-container">
         <label for="phoneInput">Phone Input</label>
-        <input id="phoneInput" type="text" placeholder="(00) 00000-0000" />
+        <input
+          id="phoneInput"
+          type="text"
+          placeholder="(00) 00000-0000"
+          oninput="applyPhoneMask(event)"
+        />
       </div>
     </div>
   </body>
-  <script src="./moneyInput.js"></script>
+  <script src="./currencyMask.js"></script>
+  <script src="./cpfMask.js"></script>
+  <script src="./cnpjMask.js"></script>
+  <script src="./phoneMask.js"></script>
 </html>
